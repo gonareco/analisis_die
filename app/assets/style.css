@@ -1,0 +1,51 @@
+/* Tablero DIE - estilos base */
+body {
+    background-color: #f5f7fa;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #1f2937;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+}
+
+.card-body h4 {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+/* Upload zone */
+#upload-data:hover {
+    border-color: #2563eb !important;
+    background-color: #eff6ff !important;
+    transition: all 0.2s ease;
+}
+
+/* Tablas */
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner table {
+    font-size: 13px;
+}
+
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th {
+    background-color: #2563eb !important;
+    color: white !important;
+    font-weight: 600;
+}
+
+/* Alertas */
+.alert {
+    border-radius: 8px;
+    border: none;
+}
+
+/* Gráficos */
+.js-plotly-plot {
+    border-radius: 10px;
+    background: white;
+    padding: 8px;
+}
