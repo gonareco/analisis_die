@@ -23,13 +23,13 @@ app = dash.Dash(
     suppress_callback_exceptions=True,
 )
 server = app.server
-app.title = "Tablero DIE - Análisis de Legajos"
+app.title = "Tablero DIE - BECAS"
 
 
 # ---------- Layout ----------
 app.layout = dbc.Container([
     dbc.Row(dbc.Col([
-        html.H1("📊 Tablero DIE", className="text-center mt-4 mb-2"),
+        html.H1("📊 Tablero DIE BECAS", className="text-center mt-4 mb-2"),
         html.P(
             "Subí el CSV de legajos y obtené el reporte de seguimiento",
             className="text-center text-muted mb-4",
@@ -227,7 +227,7 @@ def _render_reporte(df: pd.DataFrame, filename: str):
                 html.H4(res["dup_codigo"] if res["dup_codigo"] is not None else "—"),
             ])), width=3),
             dbc.Col(dbc.Card(dbc.CardBody([
-                html.H6("Duplicados por DNI", className="text-muted mb-1"),
+                html.H6("DNI Validos", className="text-muted mb-1"),
                 html.H4(res["dup_dni"] if res["dup_dni"] is not None else "—"),
             ])), width=3),
             dbc.Col(dbc.Card(dbc.CardBody([
